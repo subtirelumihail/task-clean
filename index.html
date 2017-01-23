@@ -1,0 +1,26 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Price calculator</title>
+</head>
+<body>
+    <h3>Please check the console for output.</h3>
+    <script src="src/price-calculator.js"></script>
+    <script>
+			var options = {
+				userType: 1,
+				productType: 0,
+				price: 100,
+				publishedDate: new Date(),
+			}
+
+			try {
+					var calculatedPrice = calculatePrice(options);
+					console.log('Calculated price:', calculatedPrice);
+			} catch (ex) {
+					console.log('Calculate price', ex);
+			}
+
+    </script>
+</body>
+</html>
